@@ -8,6 +8,7 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+import About from './About';
 
 class App extends React.Component {
   render() {
@@ -19,7 +20,9 @@ class App extends React.Component {
             <Route exact path="/">
               <BestBooks />
             </Route>
-            {/* PLACEHOLDER: add a route with a path of '/about' that renders the `About` component */}
+            <Route path="/about">
+              <About />
+            </Route>
           </Switch>
           <Footer />
         </Router>
